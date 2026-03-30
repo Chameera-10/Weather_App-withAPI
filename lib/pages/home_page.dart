@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:lottie/lottie.dart';
+import 'package:provider/provider.dart';
 import 'package:weather_app/models/weather_model.dart';
 import 'package:weather_app/pages/search_weather_page.dart';
+import 'package:weather_app/provider/theme_provider.dart';
 import 'package:weather_app/services/weather_services.dart';
 import 'package:weather_app/widgets/display_weatherdata.dart';
 
@@ -54,7 +56,19 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.light_mode_rounded)),
+          IconButton(
+            onPressed: () {
+              Provider.of<ThemeProvider>(
+                context,
+                listen: false,
+              ).toggleTheme(Theme.of(context).brightness != Brightness.dark);
+            },
+            icon: Icon(
+              Theme.of(context).brightness == Brightness.dark
+                  ? Icons.light_mode_rounded
+                  : Icons.dark_mode_rounded,
+            ),
+          ),
         ],
       ),
       body: _weather != null
