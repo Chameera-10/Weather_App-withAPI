@@ -29,10 +29,23 @@ class WeatherDisplay extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.w300, fontSize: 24),
             ),
             SizedBox(height: 10),
-            Text(
-              "${weather.temperature.toStringAsFixed(1)}°C",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 60),
+            Row(
+              children: [
+                Text(
+                  "${weather.temperature.toStringAsFixed(1)}",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 60),
+                ),
+                Text(
+                  "°C",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 60,
+                    color: Colors.blueAccent,
+                  ),
+                ),
+              ],
             ),
+
             const SizedBox(height: 40),
             Row(
               children: [
@@ -40,9 +53,9 @@ class WeatherDisplay extends StatelessWidget {
                   weather.condition,
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
-                const SizedBox(width: 40),
+                const SizedBox(width: 10),
                 Text(
-                  weather.description,
+                  '-${weather.description}',
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
               ],
@@ -67,7 +80,7 @@ class WeatherDisplay extends StatelessWidget {
       children: [
         Text(lable, style: TextStyle(fontWeight: FontWeight.bold)),
         Text(
-          lable,
+          value,
           style: TextStyle(fontWeight: FontWeight.normal, color: Colors.grey),
         ),
       ],

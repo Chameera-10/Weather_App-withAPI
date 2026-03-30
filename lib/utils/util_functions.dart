@@ -7,7 +7,7 @@ class UtilFunctions {
       case "haze":
       case "dust":
       case "fog":
-        return "assets/cloudy.json";
+        return "assets/clouds.json";
 
       case "rain":
       case "drizzle":
@@ -18,7 +18,7 @@ class UtilFunctions {
         return "assets/thunder.json";
 
       case "clear":
-        return "assets/sunny.json";
+        return "assets/little sun.json";
 
       default:
         return "assets/sunny.json";
