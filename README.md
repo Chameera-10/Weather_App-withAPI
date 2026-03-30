@@ -1,5 +1,12 @@
 # Weather App ☀️🌙
 
+[![Flutter](https://img.shields.io/badge/Flutter-3.0+-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-2.17+-0175C2?logo=dart&logoColor=white)](https://dart.dev)
+[![Provider](https://img.shields.io/badge/Provider-6.1+-66BB6A?logo=flutter&logoColor=white)](https://pub.dev/packages/provider)
+[![HTTP](https://img.shields.io/badge/HTTP-1.1+-4CAF50?logo=http&logoColor=white)](https://pub.dev/packages/http)
+[![SharedPreferences](https://img.shields.io/badge/SharedPreferences-2.2+-FFA000?logo=flutter&logoColor=white)](https://pub.dev/packages/shared_preferences)
+[![Lottie](https://img.shields.io/badge/Lottie-2.7+-00B8FF?logo=lottie&logoColor=white)](https://pub.dev/packages/lottie)
+
 A beautiful, feature-rich Flutter weather application that provides real-time weather data with stunning animations and a seamless user experience. Built with modern Flutter practices including Provider for state management, HTTP for API calls, Shared Preferences for theme persistence, and Lottie for smooth animations.
 
 ## 📱 Screenshots
@@ -34,6 +41,15 @@ A beautiful, feature-rich Flutter weather application that provides real-time we
 - **Animations**: Lottie
 - **Location**: Geolocator / Geocoding packages
 - **API**: OpenWeather API
+
+## Lottie Animations
+### Different animations for weather conditions:
+- **☀️ Clear sky** - Sun animation
+- **☁️ Clouds** - Cloud animation
+- **🌧️ Rain** - Raindrop animation
+- **⛈️ Thunderstorm** - Lightning animation
+- **❄️ Snow** - Snowflake animation
+- **🌫️ Mist/Fog** - Fog animation
 
 ## Prerequisites 📋
 
